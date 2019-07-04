@@ -121,8 +121,6 @@ WIN_COMBINATIONS.each do |win_combination|
   else
     return nil
   end
-end
-end
 end 
 
 def full?(board)
