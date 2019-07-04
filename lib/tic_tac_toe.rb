@@ -119,7 +119,7 @@ WIN_COMBINATIONS.each do |win_combination|
    if position_1 == "O" && position_2 == "O" && position_3 == "O"
     return "O"
   else
-    nil
+    return nil
   end
 end
 end
@@ -156,6 +156,7 @@ def play(board)
    until over?(board) 
       turn(board)
    end 
+   
    if won?(board)
       winner(board) == "X" 
       winner(board) == "O" 
