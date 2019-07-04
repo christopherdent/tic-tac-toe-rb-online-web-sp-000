@@ -142,12 +142,5 @@ end
 
 def play(board)
   
-  puts "Where would you like to go?"
-  user_input = gets.strip
-  
-  counter = 0
-while counter < 9
-    turn(board)
-  counter = counter + 1
-  end 
+turn(board)
 end 
