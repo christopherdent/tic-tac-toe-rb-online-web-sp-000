@@ -137,17 +137,14 @@ end
 
 
 def play(board)
-
-until over?(board)
-  turn(board)
-
-if winner(board) == "X"
-  puts "Congratulations X!"
-  elsif winner(board) == "O"
-  puts "Congratulations O"
-else
-  draw(board)
-end
-
- end
+   until over?(board) 
+      turn(board)
+   end 
+   if won?(board)
+      winner(board) == "X" 
+ winner(board) == "O" 
+      puts "Congratulations #{winner(board)}!" 
+   elsif draw?(board)
+      puts "Cats Game!" 
+   end 
 end
