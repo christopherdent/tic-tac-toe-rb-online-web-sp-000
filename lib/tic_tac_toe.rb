@@ -121,7 +121,7 @@ WIN_COMBINATIONS.each do |win_combination|
    if position_1 == "O" && position_2 == "O" && position_3 == "O"
     return "O"
   else
-    false
+    return nil
   end
   end
 end 
