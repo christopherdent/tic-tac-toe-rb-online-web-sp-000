@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-07-04T17:51:01+00:00">2019-07-04T17:51:01+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-07-04T17:53:00+00:00">2019-07-04T17:53:00+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,7 +25,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         23.8
+         23.2
        </span>
     </span> hits/line)
   </h2>
@@ -57,7 +57,7 @@
         <td>74</td>
         <td>73</td>
         <td>1</td>
-        <td>23.8</td>
+        <td>23.2</td>
       </tr>
       
     </tbody>
@@ -486,26 +486,26 @@
           <code class="ruby">def turn_count(board)</code>
         </li>
       
-        <li class="covered" data-hits="19" data-linenumber="67">
-          <span class="hits">19</span>
+        <li class="covered" data-hits="16" data-linenumber="67">
+          <span class="hits">16</span>
           
           <code class="ruby"> counter = 0</code>
         </li>
       
-        <li class="covered" data-hits="19" data-linenumber="68">
-          <span class="hits">19</span>
+        <li class="covered" data-hits="16" data-linenumber="68">
+          <span class="hits">16</span>
           
           <code class="ruby"> board.each do |spot|</code>
         </li>
       
-        <li class="covered" data-hits="171" data-linenumber="69">
-          <span class="hits">171</span>
+        <li class="covered" data-hits="144" data-linenumber="69">
+          <span class="hits">144</span>
           
           <code class="ruby">  if spot == &quot;X&quot; || spot == &quot;O&quot;</code>
         </li>
       
-        <li class="covered" data-hits="19" data-linenumber="70">
-          <span class="hits">19</span>
+        <li class="covered" data-hits="11" data-linenumber="70">
+          <span class="hits">11</span>
           
           <code class="ruby">      counter += 1</code>
         </li>
@@ -522,8 +522,8 @@
           <code class="ruby">  end </code>
         </li>
       
-        <li class="covered" data-hits="19" data-linenumber="73">
-          <span class="hits">19</span>
+        <li class="covered" data-hits="16" data-linenumber="73">
+          <span class="hits">16</span>
           
           <code class="ruby">return counter</code>
         </li>
@@ -546,8 +546,8 @@
           <code class="ruby">def current_player(board)</code>
         </li>
       
-        <li class="covered" data-hits="18" data-linenumber="77">
-          <span class="hits">18</span>
+        <li class="covered" data-hits="15" data-linenumber="77">
+          <span class="hits">15</span>
           
           <code class="ruby">  turn_count(board) % 2 == 0 ? &quot;X&quot; : &quot;O&quot;</code>
         </li>
@@ -876,8 +876,8 @@
           <code class="ruby">def winner(board)</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="132">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="9" data-linenumber="132">
+          <span class="hits">9</span>
           
           <code class="ruby">  if board == [&quot;X&quot;, &quot; &quot;, &quot; &quot;, &quot; &quot;, &quot;X&quot;, &quot; &quot;, &quot; &quot;, &quot; &quot;, &quot;X&quot;]</code>
         </li>
@@ -888,8 +888,8 @@
           <code class="ruby">    return &quot;X&quot;</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="134">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="8" data-linenumber="134">
+          <span class="hits">8</span>
           
           <code class="ruby">  elsif board == [&quot;X&quot;, &quot;O&quot;, &quot; &quot;, &quot; &quot;, &quot;O&quot;, &quot; &quot;, &quot; &quot;, &quot;O&quot;, &quot;X&quot;]</code>
         </li>
@@ -987,7 +987,7 @@
         <li class="covered" data-hits="3" data-linenumber="150">
           <span class="hits">3</span>
           
-          <code class="ruby">      puts &quot;Congratulations #{!current_player(board)}!&quot; </code>
+          <code class="ruby">      puts &quot;Congratulations #{winner(board)}!&quot; </code>
         </li>
       
         <li class="covered" data-hits="5" data-linenumber="151">
