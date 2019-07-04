@@ -141,10 +141,10 @@ def play(board)
 until over?(board)
   turn(board)
 
-won(board)
-if winner == "X"
+won?(board)
+if winner(board) == "X"
   puts "Congratulations X!"
-  elsif winner == "O"
+  elsif winner(board) == "O"
   puts "Congratulations O"
 else
   draw(board)
