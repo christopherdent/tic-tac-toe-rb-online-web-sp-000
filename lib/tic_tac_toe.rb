@@ -104,23 +104,9 @@ WIN_COMBINATIONS.detect do |win_combination|
 end
 
 def winner(board)
-WIN_COMBINATIONS.each do |win_combination|
-  index1 = win_combination[0]
-  index2 = win_combination[1] 
-  index3 = win_combination[2] 
-
-  position_1 = board[index1]
-  position_2 = board[index2]
-  position_3 = board[index3]
-  
-   if position_1 == "X" && position_2 == "X" && position_3 == "X"
-    return "X"
-  elsif
-   if position_1 == "O" && position_2 == "O" && position_3 == "O"
-    return "O"
-  else
-    return nil
-  end
+   if won?(board)
+      return board[won?(board)[0]]
+   end
 end 
 
 def full?(board)
