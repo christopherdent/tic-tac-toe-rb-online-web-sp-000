@@ -104,12 +104,25 @@ WIN_COMBINATIONS.detect do |win_combination|
 end
 
 def winner(board)
-  if board == ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
+WIN_COMBINATIONS.each do |win_combination|
+  index1 = win_combination[0]
+  index2 = win_combination[1] 
+  index3 = win_combination[2] 
+
+  position_1 = board[index1]
+  position_2 = board[index2]
+  position_3 = board[index3]
+  
+   if position_1 == "X" && position_2 == "X" && position_3 == "X"
     return "X"
-  elsif board == ["X", "O", " ", " ", "O", " ", " ", "O", "X"]
+  else
+    false
+  end
+   if position_1 == "O" && position_2 == "O" && position_3 == "O"
     return "O"
   else
-    return nil
+    false
+  end
   end
 end 
 
