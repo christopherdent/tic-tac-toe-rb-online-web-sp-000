@@ -153,7 +153,7 @@ end
 def play(board)
    until over?(board) 
       turn(board)
-   end 
+    end 
    
    if won?(board)
       winner(board) == "X" 
@@ -162,4 +162,5 @@ def play(board)
    elsif draw?(board)
       puts "Cats Game!" 
    end 
+end
 end
